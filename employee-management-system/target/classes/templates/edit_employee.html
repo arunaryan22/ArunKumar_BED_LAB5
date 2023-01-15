@@ -22,21 +22,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-mid-6">
-				<form th:action="@{/employees/{id}(id=${employee.id})}"
-					th:object=${employee} " method="POST">
+				<form th:action="@{/employees/{id}(id=${employee.id})}"	th:object="${employee}" method="POST">
 					<div class="form-group">
-						<label for="firstName">FirstName</label> <input type="text"
-							name="firstName" th:field="*{firstName}" id="firstname"
-							class="form-control">
+						<label for="firstName">FirstName</label>
+						<input type="text"	name="firstName" th:field="*{firstName}" id="firstname"	class="form-control">
 					</div>
 					<div class="form-group">
-						<label for="lastName">LastName</label> <input type="text"
-							name="lastName" th:field="*{lastName}" id="lastname"
-							class="form-control">
+						<label for="lastName">LastName</label>
+						<input type="text" name="lastName" th:field="*{lastName}" id="lastname"	class="form-control">
 					</div>
 					<div class="form-group">
-						<label for="email">Email</label> <input type="text" name="email"
-							th:field="*{email}" id="email" class="form-control">
+						<label for="email">Email</label>
+						<input type="text" name="email" th:field="*{email}" id="email" class="form-control">
 					</div>
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>

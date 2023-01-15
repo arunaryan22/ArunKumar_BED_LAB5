@@ -25,10 +25,9 @@
 			<h1>List Employees</h1>
 		</div>
 		<div class="row">
-			<div class="col-mid-9"></div>
+			<div class="col-mid-6"></div>
 			<div class="col-md-3">
 				<a th:href="@{/employees/new}" class="btn btn-primary">Add Employee</a>
-
 			</div>
 		</div>
 		<div class="row">
@@ -44,8 +43,7 @@
 						<td th:text="${employee.firstName}"></td>
 						<td th:text="${employee.lastName}"></td>
 						<td th:text="${employee.email}"></td>
-						<td><a class="btn btn-danger"
-							th:href="@{/employees/{id}(id=${employees.id})}">Delete</a></td>
+						<td><a class="btn btn-danger" th:href="@{/employees/{id}(id=${employee.id})}">Delete</a></td>
 						<td><a th:href="@{/employees/edit/{id}(id=${employee.id})}" class="btn btn-primary">Update</a></td>
 					</tr>
 				</tbody>
